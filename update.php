@@ -37,7 +37,7 @@
     ?>
 
 <div class="container">
-        <h1 class="page-header text-center">Add New Book</h1>
+        <h1 class="page-header text-center">Update Book</h1>
         <div class="row">
             <div class="col-8"> <a href="index.php">Back</a></div>
             <form method="post">
