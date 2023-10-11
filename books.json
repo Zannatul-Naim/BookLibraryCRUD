@@ -1,37 +1,44 @@
-{
-    "0": {
+[
+    {
         "title": "To Kill A Mockingbird",
         "author": "Harper Lee",
         "available": "YES",
-        "pages": 339,
+        "pages": 335,
         "isbn": 9780061120084
     },
-    "1": {
+    {
         "title": "1984",
         "author": "George Orwell",
         "available": "YES",
         "pages": 267,
         "isbn": 9780547249555
     },
-    "3": {
+    {
         "title": "Where the Crawdads Sing",
         "author": "Delia Owens",
         "available": "YES",
         "pages": 384,
         "isbn": 9780735219090
     },
-    "4": {
+    {
         "title": "Ami Topu",
         "author": "Jafar Iqbal",
         "available": "NO",
         "pages": 123,
         "isbn": 4456789865234
     },
-    "5": {
+    {
         "title": "Amar Bondhu Rashed",
         "author": "Muhammad Zafar Iqbal",
         "available": "YES",
         "pages": 234,
         "isbn": 9875642532543
+    },
+    {
+        "title": "Shunno",
+        "author": "Humayun Ahmed",
+        "available": "YES",
+        "pages": 187,
+        "isbn": 9875642532145
     }
-}
+]
