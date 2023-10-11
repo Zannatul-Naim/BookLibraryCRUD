@@ -20,7 +20,7 @@ $books = json_decode($data);
     }
 
     .search-box {
-      margin-left: 10px;
+      margin-left: 10px; /* Add some space between the link and the search box */
     }
   </style>
 </head>
@@ -36,7 +36,7 @@ $books = json_decode($data);
                 <div class="inline-container">
                     <a href="add.php" class="btn btn-primary">Add New </a>
                     <form method="post">
-                        <input type="text" name="input_text" id="" class="from-control rounded"
+                        <input type="text" name="input_text" id="" required class="from-control rounded"
                             placeholder="Search a Book" style="margin-left:10px">
                         <input type="submit" name="search" value="search" class="btn-primary">
                     </form>
@@ -50,13 +50,13 @@ $books = json_decode($data);
                             foreach ($books as $book) {
                                 if ($book->title == $searchQuery) {
                                     if ($book->available == "YES") {
-                                        echo "<p style='background-color: white; color: green; padding: 10px; margin-left:25px;'><b>Available!</b></p>";
+                                        echo "<p style='background-color: white; color: green; margin-left:25px;'><b>Available!</b></p>";
                                         $flag = true;
                                     }
                                 }
                             }
                             if (!$flag) {
-                                echo "<p style='background-color: white; color: red; padding: 10px; margin-left:25px;'><b>Not Available!</b></p>";
+                                echo "<p style='background-color: white; color: red; margin-left:25px;'><b>Not Available!</b></p>";
                             }
 
                         }

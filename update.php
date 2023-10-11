@@ -22,7 +22,7 @@
             $input = array(
                 "title" => $_POST['title'],
                 "author" => $_POST['author'],
-                "available" => strtoupper($_POST['available']),
+                "available" => strtoupper((string)(($_POST['available']))),
                 "pages" => (int) $_POST['pages'],
                 "isbn" => (int) $_POST['isbn']
             );
@@ -55,9 +55,9 @@
                     <label for="available" class="col-sm-2 col-form-label">Availability</label>
                     <div class="col-sm-10">
                         <select name="available" id="availability" class="form-select" required>
-                            <option value="Yes" <?php if ($book->available === 'Yes')
+                            <option value="Yes" <?php if ($book->available === 'YES')
                                 echo 'selected'; ?>>Yes</option>
-                            <option value="No" <?php if ($book->available === 'No')
+                            <option value="No" <?php if ($book->available === 'NO')
                                 echo 'selected'; ?>>No</option>
                         </select>
                     </div>

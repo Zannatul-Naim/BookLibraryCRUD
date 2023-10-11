@@ -1,37 +1,37 @@
-[
-    {
+{
+    "0": {
         "title": "To Kill A Mockingbird",
         "author": "Harper Lee",
         "available": "YES",
         "pages": 339,
         "isbn": 9780061120084
     },
-    {
+    "1": {
         "title": "1984",
         "author": "George Orwell",
-        "available": "NO",
+        "available": "YES",
         "pages": 267,
         "isbn": 9780547249555
     },
-    {
-        "title": "One Hundred Years Of Solitude",
-        "author": "Gabriel Garcia Marquez",
-        "available": "YES",
-        "pages": 457,
-        "isbn": 9785267006323
-    },
-    {
+    "3": {
         "title": "Where the Crawdads Sing",
         "author": "Delia Owens",
         "available": "YES",
         "pages": 384,
         "isbn": 9780735219090
     },
-    {
+    "4": {
         "title": "Ami Topu",
         "author": "Jafar Iqbal",
-        "available": "YES",
+        "available": "NO",
         "pages": 123,
         "isbn": 4456789865234
+    },
+    "5": {
+        "title": "Amar Bondhu Rashed",
+        "author": "Muhammad Zafar Iqbal",
+        "available": "YES",
+        "pages": 234,
+        "isbn": 9875642532543
     }
-]
+}
