@@ -70,7 +70,7 @@
         $input = array(
             "title" => $_POST['title'],
             "author" => $_POST['author'],
-            "available" => strtoupper($_POST['available']),
+            "available" => strtoupper((string)(($_POST['available']))),
             "pages" => (int) $_POST['pages'],
             "isbn" => (int) $_POST['isbn']
         );
