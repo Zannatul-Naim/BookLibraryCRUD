@@ -20,7 +20,7 @@ $books = json_decode($data);
     }
 
     .search-box {
-      margin-left: 10px; /* Add some space between the link and the search box */
+      margin-left: 10px;
     }
   </style>
 </head>
@@ -50,13 +50,13 @@ $books = json_decode($data);
                             foreach ($books as $book) {
                                 if ($book->title == $searchQuery) {
                                     if ($book->available == "YES") {
-                                        echo "<p style='background-color: white; border-radius: 10px; border: 1px solid black; color: green; padding: 10px; margin-left:25px;'><b>Available!</b></p>";
+                                        echo "<p style='background-color: white; color: green; padding: 10px; margin-left:25px;'><b>Available!</b></p>";
                                         $flag = true;
                                     }
                                 }
                             }
                             if (!$flag) {
-                                echo "<p style='background-color: white; border-radius: 10px; border: 1px solid black; color: red; padding: 10px; margin-left:25px;'><b>Not Available!</b></p>";
+                                echo "<p style='background-color: white; color: red; padding: 10px; margin-left:25px;'><b>Not Available!</b></p>";
                             }
 
                         }
