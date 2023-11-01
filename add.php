@@ -60,13 +60,8 @@
     <?php
     include_once("json_update.php");
     if (isset($_POST['save'])) {
-
-        // // open the json file
-        // $data = file_get_contents('books.json');
-        // $books = json_decode($data);
-    
+        
         // data in out post
-    
         $input = array(
             "title" => $_POST['title'],
             "author" => $_POST['author'],
@@ -74,12 +69,8 @@
             "pages" => (int) $_POST['pages'],
             "isbn" => (int) $_POST['isbn']
         );
-
-        // $books[] = $input;
         json_update($input);
-        // // encode back to json
-        // $data = json_encode($books, JSON_PRETTY_PRINT);
-        // file_put_contents('books.json', $data);
+
         header('location: index.php');
     }
     ?>
