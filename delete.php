@@ -11,10 +11,6 @@
 
     $books = array_values($books);
 
-    // echo "<pre>";
-    // print_r($books);
-    // echo "</pre>";
-    // var_dump($books);
     // encode back to json
     $data = json_encode($books, JSON_PRETTY_PRINT);
     file_put_contents('books.json', $data);
